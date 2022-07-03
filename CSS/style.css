@@ -111,3 +111,191 @@ body
     color: black;
     margin-left: 5px;
 }
+
+.option-div
+{
+    height: 350px;
+    width: 100%;
+    position: relative;
+    top: 85px;
+}
+
+.option-div > option
+{
+    position: relative;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 65px;
+    width: 350px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 23px;
+    cursor: pointer;
+    color:grey;
+    display: flex;
+    align-items: center;
+}
+
+.option:hover
+{
+    background: rgba(220,220,220,0.5);
+    color: #696969;
+    border: 1.2px solid #696969;
+}
+
+.option > span
+{
+    margin-left: 15px;
+}
+
+.option > .icon
+{
+    height: 35px;
+    width: 35px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: -5px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct-icon
+{
+    background: #6FBD67;
+}
+
+.wrong-icon
+{
+    background: #D73739;
+}
+
+.option.correct
+{
+    background-color: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+}
+
+.option.incorrect
+{
+    background-color: #f7c7c7;
+    color: #d73739;
+    border-color: #d73739;
+}
+
+.option.disabled
+{
+    pointer-events: none;
+}
+
+.next-ques-btn
+{
+    all: unset;
+    padding: 10px;
+    width: 330px;
+    color: white;
+    text-align: center;
+    background: #66C7D0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.next-ques-btn.click-disabled
+{
+    pointer-events: none;
+}
+
+.result-div
+{
+    height: 300px;
+    width: 400px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    display: none;
+}
+
+.result-div .fa-crown
+{
+    color: #66C7D0;
+    font-size: 120px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.result-div > span
+{
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.result-div .score
+{
+    position: absolute;
+    top: 205px;
+    height: 30px;
+    width: 100%;
+    color: black;
+}
+
+.score > span
+{
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+.reply-quiz-btn
+{
+    all: unset;
+    position: absolute;
+    bottom: 5px;
+    padding: 5px;
+    width: 100px;
+    background: #66C7D0;
+    white-space: nowrap;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #66C7D0;
+}
+
+.time-line
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: #66C7D0;
+}
+
+::selection
+{
+    color: white;
+    background: #66C7D0;
+}
